@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tetris Game JS</title>
+        <style>
+            #score{
+            display: inline-block;
+        }
+        div{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+        }
+        canvas{
+            display: block;
+            margin:0 auto;
+        }
+        .box{
+            background-color: chocolate;
+            margin: 0px;
+            padding: 20px;
+        }
+        .upper-box{
+            background-color: indigo;
+            color: ivory;
+            margin: 15px 0 5px 0;
+            padding: 10px;
+        }
+        .score{
+            background-color: rgb(9, 19, 75);
+            color: oldlace;
+            padding: 20px 0 20px 0;
+            margin: 20px 0 0px 0;
+            font-size: 40px;
+        }
+        #score{
+            font-size: 40px;
+        }
+        .footer{
+            background-color: rgb(9, 19, 75);
+            color: oldlace;
+            padding: 20px 0 20px 0;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="upper-box">Tetris Game using JavaScript</div><br>
+        <div class="box">
+            <canvas id="tetris" width="200" height="400"></canvas>
+        </div>
+        <div class="score">
+            Score : <div id="score">0</div>
+        </div>
+        <div class="footer">
+            This game was created by SANJEEV.
+        </div>
+        <script src="tetrominoes.js"></script>
+        <script src="tetris.js"></script>
+    </body>
+</html>
+
